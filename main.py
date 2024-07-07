@@ -76,7 +76,7 @@ def next_round():
             dealer_score += num
         
         print(f"your cards: {your_cards}, current score:{your_score}\ndealer card: {dealer_cards}, dealer score:{dealer_score}")
-        if your_score > dealer_score:
+        if your_score > dealer_score or dealer_score > 21:
             print('you win')
         elif your_score == dealer_score:
             print('draw')
